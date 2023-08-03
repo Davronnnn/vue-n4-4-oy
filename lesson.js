@@ -1,6 +1,9 @@
-function findGipotenuza(a, b) {
-    return Math.sqrt(a * a + b * b);
-}
 
-console.log(findGipotenuza(6,8))
-
+// push arrayning oxiriga qiymat qo'shish uchun ishlatiladi
+// vegetables.push("asdasd");
+// pop arrayning oxiriga elementini olib tashlaydi
+// vegetables.pop();
+// unshift arrayning boshiga qiymat qo'shish uchun ishlatiladi
+// vegetables.unshift("asdasd");
+// shift arrayning boshidagi elementini olib tashlaydi
+// vegetables.shift();

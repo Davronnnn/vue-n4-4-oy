@@ -8,41 +8,32 @@
         <title>Document</title>
     </head>
     <body>
-        <div class="container">
-            <section class="text-center">
-                <h2>Kim birinchi borishga!</h2>
-
-                <form class="m-auto">
-                    <label for=""> Masofa </label>
-                    <input class="form-input" type="number" placeholder="100km" />
-                    <button id="form-btn">Go</button>
+        <div class="container p-5">
+            
+            <div class="d-flex gap-5">
+                <form id="form" class="form-control w-75" >
+                    <h3>New contact form</h3>
+                    <input class="form-control mt-3 input-name" placeholder="Name" type="text">
+                    <input class="form-control mt-3 input-relationship" placeholder="relationship" type="text">
+                    <input class="form-control mt-3 input-phone" placeholder="Phone" type="phone">
+                    <button class="btn btn-primary form-control mt-3 "id="btn">Add contact</button>
                 </form>
 
-                <div class="cards d-flex  justify-content-around mt-3">
-                    <div class="card p-5">
-                        <h4>Piyoda</h4>
-                        <p class="person-time">N soat</p>
-                        
-                    </div>
-                    <div class="card p-5">
-                        <h4>Velosiped</h4>
-                        <p class="bicycle-time">N soat</p>
-                        
-                    </div>
-                    <div class="card p-5">
-                        <h4>Mashina</h4>
-                        <p class="car-time">N soat</p>
-                        
-                    </div>
-                    <div class="card p-5">
-                        <h4>Samolyot</h4>
-                        <p class="plane-time">N soat</p>
+                <div class="right-side w-100">
+                    <h3>Contacts</h3>
+                    <div class="cards">
+                        <div class="card p-3">
+                            <div class="card-title">Lorem imspu</div>
+                            <p class="card-relationship">qarindosh</p>
+                            <p class="card-phone">+998 123 23 45</p>
+                        </div>
                         
                     </div>
                 </div>
-            </section>
+            </div>
+          
         </div>
-        <div style="height: 200vh;"></div>
+       
         <script src="./main.js"></script>
         <script src="./lesson.js"></script>
     </body>

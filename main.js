@@ -1,46 +1,26 @@
-const elInput = document.querySelector(".form-input");
-const elBtn = document.querySelector("#form-btn");
-const elPersonTime = document.querySelector(".person-time");
-const elBicycleTime = document.querySelector(".bicycle-time");
-const elCarTime = document.querySelector(".car-time");
-const elPlaneTime = document.querySelector(".plane-time");
+const elInputName = document.querySelector(".input-name");
+const elInputRelationship = document.querySelector(".input-relationship");
+const elInputPhone = document.querySelector(".input-phone");
+const elForm = document.querySelector("#form");
+const elCards = document.querySelector(".cards");
 
-const personSpeed = 3.6;
-const bicycleSpeed = 20.1;
-const carSpeed = 70;
-const planeSpeed = 800;
+elForm.addEventListener("submit", function(evt){
+    evt.preventDefault();
 
-function generateTime(masofa, speed) {
-    const Time = masofa / speed;
-    const Hours = Math.floor(Time);
-    const FullMinutes = (Time - Hours) * 60;
-    const Minutes = Math.floor(FullMinutes);
-    const Seconds = Math.round((FullMinutes - Minutes) * 60);
-    return `Yo'lovchi ${Hours} soat, ${Minutes} daqiqa, ${Seconds} soniyada yetib keladi`;
-}
+    if(elInputName.value !==""){
+    const newCard = document.createElement("div");
+    newCard.className = "card p-3 mt-3";
+    newCard.innerHTML = `
+    <div class="card-title">${elInputName.value}</div>
+    <p class="card-relationship">${elInputRelationship.value}</p>
+    <p class="card-phone">${elInputPhone.value}</p>
+    `
+    elCards.appendChild(newCard)
 
-elBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    const space = elInput.value;
-
-    elPersonTime.textContent = generateTime(space, personSpeed);
-    elBicycleTime.textContent = generateTime(space, bicycleSpeed);
-    elCarTime.textContent = generateTime(space, carSpeed);
-    elPlaneTime.textContent = generateTime(space, planeSpeed);
-});
-
-elBtn.addEventListener("mouseover", function(e) {
-    console.log("test")
-    document.body.style.backgroundColor = "gray"
+   elForm.reset()}
+   else{
+    alert("Error")
+   }
 })
 
-elBtn.addEventListener("mouseout", function(e) {
-    console.log("test")
-    document.body.style.backgroundColor = "white"
-})
-
-window.addEventListener("scroll",function(){
-    console.log(window.scrollY)
-})
 
