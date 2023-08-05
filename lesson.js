@@ -1,9 +1,20 @@
+// console.log( 3 === 3);
+const arr1 = [];
+const arr2 = [];
 
-// push arrayning oxiriga qiymat qo'shish uchun ishlatiladi
-// vegetables.push("asdasd");
-// pop arrayning oxiriga elementini olib tashlaydi
-// vegetables.pop();
-// unshift arrayning boshiga qiymat qo'shish uchun ishlatiladi
-// vegetables.unshift("asdasd");
-// shift arrayning boshidagi elementini olib tashlaydi
-// vegetables.shift();
+// const numbers = [1, 2, 3, 4];
+// const person = { 
+//     name: "John", 
+//     age: 20, 
+//     hobbies: ["Futbol", "Ovqat pishirish", "kitob o'qish"],
+//     findBirthYear: function(num){
+//         return  2023 - num  
+//     },
+//     address: {
+//         country: "Uzb",
+//         city:"Tashkent",
+//         street: "Muqimiy"
+//     }
+// };
+
+
