@@ -8,7 +8,26 @@
         <title>Document</title>
     </head>
     <body>
-        
+        <ul id="tab-list" class="d-flex list-unstyled gap-5 m-5">
+            <li data-tab="1" data-nimadir="12" class="list-item list-item-1 bg-secondary px-3 text-white bg-info">Tab1</li>
+            <li data-tab="2" class="list-item list-item-2 bg-secondary px-3 text-white">Tab2</li>
+            <li data-tab="3" class="list-item list-item-3 bg-secondary px-3 text-white">Tab3</li>
+            <li data-tab="4" class="list-item list-item-4 bg-secondary px-3 text-white">Tab4</li>
+        </ul>
+
+        <p class="result-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nesciunt, ut explicabo quae ex repudiandae quo mollitia modi provident tempore aspernatur cumque. Facere, fugiat illum excepturi officiis iure delectus itaque.</p>
+
+        <div class="text-center mt-5">
+            <input type="text" name="" placeholder="Search product..." id="search-input" />
+            <button id="search-btn" class="btn btn-info">Search</button>
+
+            <select name="" id="">
+                <option value="all">All</option>
+                <option value="men's clothing">men's clothing</option>
+                <option value="jewelery">jewelery</option>
+            </select>
+        </div>
+
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -18,10 +37,10 @@
                     </div>
                     <div class="modal-body">
                         <form class="update-form">
-                            <img class="w-100" style="max-height: 300px;" id="update-img" src="" alt="">
-                            <input class="form-control mt-3" type="text" placeholder="title"  id="input-title">
-                            <input class="form-control mt-3" type="text" placeholder="Image"  id="input-image">
-                            <input class="form-control mt-3" type="text" placeholder="price"  id="input-price">
+                            <img class="w-100" style="max-height: 300px" id="update-img" src="" alt="" />
+                            <input class="form-control mt-3" type="text" placeholder="title" id="input-title" />
+                            <input class="form-control mt-3" type="text" placeholder="Image" id="input-image" />
+                            <input class="form-control mt-3" type="text" placeholder="price" id="input-price" />
                         </form>
                     </div>
                     <div class="modal-footer">
